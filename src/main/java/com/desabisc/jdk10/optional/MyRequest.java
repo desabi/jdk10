@@ -5,6 +5,6 @@ import lombok.Getter;
 @Getter
 public class MyRequest {
     public String getParameter(String name){
-        return "";
+        return "desabi@live.com";
     }
 }
