@@ -3,12 +3,12 @@ package com.desabisc.jdk10.collections;
 import java.util.List;
 
 /**
- * Real-World Use Case:
- * Imagine you have a method that returns a list of configuration keys.
- * You want to ensure that the caller cannot modify the original list:
+ * Real-World Use Case: Imagine you have a method that returns a list of configuration keys. You
+ * want to ensure that the caller cannot modify the original list:
  */
 public class CopyOfUseCase {
-  private static final List<String> KEYS  = List.of("host", "post", "timeout");
+
+  private static final List<String> KEYS = List.of("host", "post", "timeout");
 
   public static List<String> getConfigKeys() {
     // Return and unmodifiable copy of the keys

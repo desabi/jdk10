@@ -8,12 +8,13 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * The static factory methods List.copyOf(), Set.copyOf(), and Map.copyOf() were introduced in
- * Java 10 as part of the API enhancements.
- * These methods allow you to create unmodifiable copies of existing collections.
- * Once created, the resulting collections cannot be modified (i.e., you cannot add, remove, or update elements).
+ * The static factory methods List.copyOf(), Set.copyOf(), and Map.copyOf() were introduced in Java
+ * 10 as part of the API enhancements. These methods allow you to create unmodifiable copies of
+ * existing collections. Once created, the resulting collections cannot be modified (i.e., you
+ * cannot add, remove, or update elements).
  */
 public class CopyOfEg {
+
   public static void main(String[] args) {
     copyOfListEg();
     copyOfSetEg();
@@ -27,7 +28,7 @@ public class CopyOfEg {
     mutableList.add("Cherry");
 
     // Create an unmodifiable copy of the list
-    List<String> unmodifiableList  = List.copyOf(mutableList);
+    List<String> unmodifiableList = List.copyOf(mutableList);
 
     // try to modify the unmodifiable list (this will throw an exception)
     try {
